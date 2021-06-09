@@ -1,0 +1,10 @@
+{% extends "main/headers.html" %}
+
+{% block content %}
+  <form method="POST">
+    {% csrf_token %} 
+    {{form}}  <!---form to look like paragraph tag --> 
+    <button class="btn" style="background-color: brown; color:chartreuse" type="submit">REGISTER</button>
+  </form>
+  <p>If already have a account <a href="/login">Login</a> create one here!!</p>
+{% endblock %}
